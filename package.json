@@ -1,0 +1,21 @@
+{
+  "name": "texthooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob Caraway",
+  "license": "ISC",
+  "dependencies": {
+    "angular-google-gapi": "^1.0.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "google-auth-library": "^0.10.0",
+    "google-id-token-verifier": "^0.2.3",
+    "googleapis": "^18.0.0",
+    "mongoose": "^4.9.1",
+    "twilio": "^2.11.1"
+  }
+}

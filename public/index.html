@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TextHooks">
+<head> 
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="app.js" ></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  
+  <title>Save time w/ SMS</title>
+</head>
+<body>
+<div class="container" ng-controller="HooksController">
+	<h1 class="pull-left">TextHooks</h1>
+
+  <div class="g-signin2" data-onsuccess="onSignIn">Sign up with Google</div>
+  <h4 ng-model="status"></h4>
+    <script type="text/javascript" src="email.js"></script>    
+    <script type="text/javascript">
+    
+      function updateSigninStatus(isSignedIn) {
+
+        if (isSignedIn) {
+          // window.open("http://localhost:3001/tasks","_self")
+        } else {
+        }
+      }
+
+      handleClientLoad();
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TextHooks">
+<head> 
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="app.js" ></script>
+	<meta charset="UTF-8">
+	<title>Save time w/ SMS</title>
+</head>
+<body>
+<div class="container" ng-controller="HooksController">
+	<h1 class="pull-left">TextHooks</h1>
+	<button id="signout-button" class="btn pull-right">Sign Out</button>
+
+  <input ng-model="search.keywords" class="form-control input-lg" type="text" name="search" placeholder="Search your email to find email addresses">
+  <button ng-click="emailSearchTapped(search.keywords)" class="btn btn-success btn-block">Search for email addresses</button>
+  
+
+  <script type="text/javascript" src="email.js"></script>
+    <script type="text/javascript">
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          signoutButton.style.display = 'block';
+        } else {
+          window.open("http://localhost:3001/","_self")
+          signoutButton.style.display = 'none';
+        }
+      }
+	</script>
+    
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+   
+
+</div>
+</body>
+</html>
